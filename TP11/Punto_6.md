@@ -1,6 +1,3 @@
-///Historia de navegación:
-Un cliente llega a la pantalla inicial (loginCliente). Al no tener credenciales, hace clic en 'Registrar', completa el formulario (registerCliente) y, tras crear la cuenta, es retornado al Login. Una vez logueado, ingresa a su panel principal (listTicket), donde visualiza todos sus reclamos. Selecciona uno específico para leer las respuestas del soporte técnico (viewTicket) y luego utiliza el menú de navegación para volver a la lista. Finalmente, decide generar un nuevo reclamo (addTicket), lo envía, y el sistema lo devuelve a su lista actualizada.
-
 ```mermaid
 
 graph TD
