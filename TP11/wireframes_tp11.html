@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframes - TP11 Mesa de Ayuda</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding: 40px;
+            background-color: #eaeaea;
+        }
+        
+        /* Estilo contenedor simulando una ventana o tarjeta de interfaz */
+        .wireframe-box {
+            background-color: #ffffff;
+            border: 2px solid #555;
+            padding: 30px;
+            border-radius: 8px;
+            width: 320px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+            border-bottom: 2px dashed #ccc;
+            padding-bottom: 10px;
+        }
+
+        .control-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Controles de ingreso */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        /* Botones de acción */
+        .btn-action {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btn-action:hover {
+            background-color: #45a049;
+        }
+
+        /* Enlaces de navegación */
+        .nav-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #0066cc;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .instrucciones {
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================
+         MOCKUP 1: Pantalla de Registración
+         ========================================== -->
+    <div class="wireframe-box">
+        <h2>Registrar Nuevo Cliente</h2>
+        
+        <div class="control-group">
+            <label>Nombre y Apellido:</label>
+            <input type="text" placeholder="Ingrese su nombre completo">
+        </div>
+        
+        <div class="control-group">
+            <label>Correo Electrónico:</label>
+            <input type="email" placeholder="ejemplo@correo.com">
+        </div>
+        
+        <div class="control-group">
+            <label>Contraseña:</label>
+            <input type="password" placeholder="Cree una contraseña">
+        </div>
+        
+        <div class="control-group">
+            <label>Confirmar Contraseña:</label>
+            <input type="password" placeholder="Repita su contraseña">
+        </div>
+
+        <!-- Checkbox de términos y condiciones (Referencia al punto 8) -->
+        <div class="control-group" style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
+            <input type="checkbox" id="terminos">
+            <label for="terminos" style="font-weight: normal; margin-bottom: 0; font-size: 12px;">Acepto los términos y condiciones</label>
+        </div>
+        
+        <button class="btn-action">Crear Cuenta</button>
+        
+        <!-- Navegación de retorno al Login -->
+        <a class="nav-link">&lt; Volver a la pantalla de Login</a>
+    </div>
+
+
+    <!-- ==========================================
+         MOCKUP 2: Pantalla de Blanqueo de Password
+         ========================================== -->
+    <div class="wireframe-box">
+        <h2>¿Olvidó su Password?</h2>
+        <p class="instrucciones">Ingrese el correo electrónico asociado a su cuenta. Le enviaremos un enlace para blanquear su clave.</p>
+        
+        <div class="control-group">
+            <label>Correo Electrónico:</label>
+            <input type="email" placeholder="ejemplo@correo.com">
+        </div>
+        
+        <button class="btn-action" style="background-color: #007BFF;">Enviar Enlace de Blanqueo</button>
+        
+        <!-- Navegación de retorno al Login -->
+        <a class="nav-link">&lt; Volver a la pantalla de Login</a>
+    </div>
+
+</body>
+</html>
